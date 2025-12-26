@@ -3,11 +3,7 @@
     enable = true;
     settings = {
       config = {
-        footer = [
-          "Made with ❤️"
-        ];
         header = [
-          ""
           ""
           ""
           " █████╗ ██████╗  ██████╗██╗  ██╗███████╗██████╗ "
@@ -18,40 +14,34 @@
           "╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝"
           ""
           ""
-          ""
         ];
-
+        mru = {
+          limit = 20;
+        };
+        project = {
+          enable = false;
+        };
+        shortcut = [
+          {
+            action = "Telescope find_files";
+            desc = "󰈞 Files";
+            group = "Label";
+            key = "f";
+          }
+          {
+            action = "Neotree";
+            desc = "󰙅 Open tree";
+            group = "DiagnosticHint";
+            key = "e";
+          }
+          {
+            action = "Telescope git_branches";
+            desc = " Git Breaches";
+            group = "Number";
+            key = "g";
+          }
+        ];
       };
-      mru = {
-        limit = 20;
-      };
-      project = {
-        enable = false;
-      };
-      shortcut = [
-        {
-          action = {
-            __raw = "function(path) vim.cmd('Telescope find_files') end";
-          };
-          desc = "Files";
-          group = "Label";
-          icon = " ";
-          icon_hl = "@variable";
-          key = "f";
-        }
-        {
-          action = "Telescope app";
-          desc = " Apps";
-          group = "DiagnosticHint";
-          key = "a";
-        }
-        {
-          action = "Telescope dotfiles";
-          desc = " dotfiles";
-          group = "Number";
-          key = "d";
-        }
-      ];
     };
   };
 }
