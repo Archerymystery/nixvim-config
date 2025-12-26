@@ -12,7 +12,7 @@
     ./telescope.nix
     ./which-key.nix
     ./gitsigns.nix
-
+    ./comment.nix
   ];
   extraPackages = with pkgs; [
     ripgrep
