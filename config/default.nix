@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-  # Import all your configuration modules here
   imports = [
     ./bufferline.nix
     ./lualine.nix
@@ -13,19 +12,16 @@
     ./telescope.nix
     ./which-key.nix
     ./gitsigns.nix
-    #  ./keymaps.nix #<< ось тут я імпротую його
+
   ];
   extraPackages = with pkgs; [
     ripgrep
-    fd # Часто йде в парі з ripgrep для швидкості
   ];
   colorschemes.rose-pine.enable = true;
   plugins.nvim-autopairs.enable = true;
   plugins.transparent = {
     enable = true;
     settings = {
-      # Групи, для яких потрібно встановити прозорий фон.
-      # Це стандартні групи Neovim.
       groups = [
         "Normal"
         "NormalNC"
@@ -48,14 +44,14 @@
         "NonText"
         "SignColumn"
         "CursorLine"
-        "NvimTreeNormal" # Для популярного плагіна NvimTree
-        "NormalFloat" # Для спливаючих вікон плагінів (Mason, LSP, Lazy)
+        "NvimTreeNormal"
+        "NormalFloat"
       ];
     };
   };
   opts = {
     number = true;
-    shiftwidth = 2; # Tab width should be 2
+    shiftwidth = 2;
   };
   viAlias = true;
   vimAlias = true;

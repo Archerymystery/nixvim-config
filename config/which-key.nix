@@ -5,8 +5,8 @@
       icons = {
         breadcrumb = "»";
         separator = "➜";
-        group = ""; # Прибирає іконку перед назвою групи
-        rules = false; # Вимикає автоматичні іконки на основі тексту
+        group = "";
+        rules = false;
       };
     };
   };

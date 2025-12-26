@@ -5,8 +5,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<C-e>"; # C-e означає Ctrl+e
-      # Команда відкриває файлову систему і показує її зліва
+      key = "<C-e>";
       action = ":Neotree filesystem reveal left<CR>";
       options = {
         silent = true;
