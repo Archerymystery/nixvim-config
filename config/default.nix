@@ -1,20 +1,20 @@
 { pkgs, ... }:
 {
   imports = [
-    ./modules/bufferline.nix
-    ./modules/lualine.nix
-    ./modules/lsp.nix
-    ./modules/cmp.nix
-    ./modules/conform-nvim.nix
-    ./modules/tree.nix
-    ./modules/toggleterm.nix
-    ./modules/dashboard.nix
-    ./modules/telescope.nix
-    ./modules/which-key.nix
-    ./modules/gitsigns.nix
-    ./modules/comment.nix
-    ./modules/nvim-autopairs.nix
-    ./modules/transperent.nix
+    ./plugins/bufferline.nix
+    ./plugins/lualine.nix
+    ./plugins/lsp.nix
+    ./plugins/cmp.nix
+    ./plugins/conform-nvim.nix
+    ./plugins/tree.nix
+    ./plugins/toggleterm.nix
+    ./plugins/dashboard.nix
+    ./plugins/telescope.nix
+    ./plugins/which-key.nix
+    ./plugins/gitsigns.nix
+    ./plugins/comment.nix
+    ./plugins/nvim-autopairs.nix
+    ./plugins/transperent.nix
     ./core/theme.nix
 
   ];
