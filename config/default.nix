@@ -1,18 +1,18 @@
 { pkgs, ... }:
 {
   imports = [
-    ./bufferline.nix
-    ./lualine.nix
-    ./lsp.nix
-    ./cmp.nix
-    ./conform-nvim.nix
-    ./tree.nix
-    ./toggleterm.nix
-    ./dashboard.nix
-    ./telescope.nix
-    ./which-key.nix
-    ./gitsigns.nix
-    ./comment.nix
+    ./modules/bufferline.nix
+    ./modules/lualine.nix
+    ./modules/lsp.nix
+    ./modules/cmp.nix
+    ./modules/conform-nvim.nix
+    ./modules/tree.nix
+    ./modules/toggleterm.nix
+    ./modules/dashboard.nix
+    ./modules/telescope.nix
+    ./modules/which-key.nix
+    ./modules/gitsigns.nix
+    ./modules/comment.nix
   ];
   extraPackages = with pkgs; [
     ripgrep
