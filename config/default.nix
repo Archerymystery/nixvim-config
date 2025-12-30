@@ -13,42 +13,14 @@
     ./modules/which-key.nix
     ./modules/gitsigns.nix
     ./modules/comment.nix
+    ./modules/nvim-autopairs.nix
+    ./modules/transperent.nix
+    ./core/theme.nix
+
   ];
   extraPackages = with pkgs; [
     ripgrep
   ];
-  colorschemes.rose-pine.enable = true;
-  plugins.nvim-autopairs.enable = true;
-  plugins.transparent = {
-    enable = true;
-    settings = {
-      groups = [
-        "Normal"
-        "NormalNC"
-        "Comment"
-        "Constant"
-        "Special"
-        "Identifier"
-        "Statement"
-        "PreProc"
-        "Type"
-        "Underlined"
-        "Todo"
-        "String"
-        "Function"
-        "Conditional"
-        "Repeat"
-        "Operator"
-        "Structure"
-        "LineNr"
-        "NonText"
-        "SignColumn"
-        "CursorLine"
-        "NvimTreeNormal"
-        "NormalFloat"
-      ];
-    };
-  };
   opts = {
     number = true;
     shiftwidth = 2;
