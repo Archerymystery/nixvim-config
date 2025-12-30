@@ -16,7 +16,7 @@
     ./plugins/nvim-autopairs.nix
     ./plugins/transperent.nix
     ./core/theme.nix
-
+    ./core/keymap.nix
   ];
   extraPackages = with pkgs; [
     ripgrep

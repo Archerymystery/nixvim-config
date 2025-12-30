@@ -1,30 +1,21 @@
 {
   plugins = {
-    bufferline.enable = true;
+    bufferline =
+      {
+        enable = true;
+        settings = {
+          options = {
+            offsets = [
+              {
+                filetype = "neo-tree";
+                highlight = "Directory";
+                text = "File Explorer";
+                text_align = "center";
+              }
+            ];
+          };
+        };
+      };
     web-devicons.enable = true;
   };
-  keymaps = [
-
-    {
-      mode = "n";
-      key = "<Tab>";
-      action = ":BufferLineCycleNext<CR>";
-      options = {
-        silent = true;
-        desc = "Next Buffer";
-      };
-    }
-
-
-    {
-      mode = "n";
-      key = "<S-Tab>";
-      action = ":BufferLineCyclePrev<CR>";
-      options = {
-        silent = true;
-        desc = "Previous Buffer";
-      };
-    }
-
-  ];
 }
