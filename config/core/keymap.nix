@@ -102,6 +102,54 @@
       action = ":Telescope git_branches<CR>";
       options = { desc = " Select git branch"; };
     }
+    # --- ESP32 ---
+    {
+      mode = "n";
+      key = "<leader>eM";
+      action.__raw = ''function() require("esp32").pick("monitor") end'';
+      options = { desc = "ESP32: Pick & Monitor"; };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>em";
+      action.__raw = ''function() require("esp32").command("monitor") end'';
+      options = { desc = "ESP32: Monitor"; };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>eF";
+      action.__raw = ''function() require("esp32").pick("flash") end'';
+      options = { desc = "ESP32: Pick & Flash"; };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>ef";
+      action.__raw = ''function() require("esp32").command("flash") end'';
+      options = { desc = "ESP32: Flash"; };
+    }
+    {
+      mode = "n";
+      key = "<leader>ec";
+      action.__raw = ''function() require("esp32").command("menuconfig") end'';
+      options = { desc = "ESP32: Configure"; };
+    }
+    {
+      mode = "n";
+      key = "<leader>eC";
+      action.__raw = ''function() require("esp32").command("clean") end'';
+      options = { desc = "ESP32: Clean"; };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>eb";
+      action = ":ESPBuild<CR>";
+      options = { desc = "ESP32: Build"; };
+
+    }
 
   ];
 

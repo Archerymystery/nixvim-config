@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    #plugins
     ./plugins/bufferline.nix
     ./plugins/lualine.nix
     ./plugins/lsp.nix
@@ -15,6 +16,9 @@
     ./plugins/comment.nix
     ./plugins/nvim-autopairs.nix
     ./plugins/transperent.nix
+    ./plugins/esp32.nix
+
+    #core
     ./core/theme.nix
     ./core/keymap.nix
   ];
