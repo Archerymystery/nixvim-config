@@ -32,6 +32,20 @@
       nixd = {
         enable = true;
       };
+      clangd = {
+        enable = true;
+        extraOptions = {
+          __raw = ''
+            (function()
+              local status_ok, esp32 = pcall(require, "esp32")
+              if os.getenv("ESP_MODE") == "1" and status_ok then
+                return esp32.lsp_config()
+              end
+             return {}
+            end)()
+          '';
+        };
+      };
     };
   };
 }
