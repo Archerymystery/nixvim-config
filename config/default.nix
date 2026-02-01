@@ -17,7 +17,7 @@
     ./plugins/nvim-autopairs.nix
     ./plugins/transperent.nix
     ./plugins/esp32.nix
-
+    ./plugins/presence.nix
     #core
     ./core/theme.nix
     ./core/keymap.nix
